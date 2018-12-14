@@ -1,0 +1,7 @@
+ibucalc:
+  version: VERSION
+  js:
+    js/ibucalc.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

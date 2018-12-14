@@ -1,0 +1,9 @@
+name: Devins Shop Main Module
+type: module
+description: 'Devins Shop'
+# core: 8.x
+package: Devins Shop
+
+version: '8.x-1.0'
+core: '8.x'
+project: 'devinshop'

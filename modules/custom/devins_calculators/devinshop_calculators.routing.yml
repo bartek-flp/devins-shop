@@ -1,0 +1,15 @@
+devinshop_calculators.ibu:
+  path: '/calculators/ibu'
+  defaults:
+    _title: 'Calcs'
+    _form: '\Drupal\devinshop_calculators\Form\IbuCalculatorForm'
+  requirements:
+    _permission: 'access content'
+
+devinshop_calculators.autocomplete:
+  path: '/calculators/ibu/autocomplete'
+  defaults:
+    _controller: '\Drupal\devinshop_calculators\Controller\AutocompleteController::handleAutocomplete'
+    _format: json
+  requirements:
+    _access: 'TRUE'

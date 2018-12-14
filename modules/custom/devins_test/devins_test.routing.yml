@@ -1,0 +1,6 @@
+devins_test.content:
+  path: '/test-php'
+  defaults:
+    _controller: '\Drupal\devins_test\Controller\ModernPHP::content'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,9 @@
+name: Devins Brewery Calculators
+type: module
+description: 'Devins Calculators'
+# core: 8.x
+package: Devins Brewery
+
+version: '8.x-1.0'
+core: '8.x'
+project: 'devinshop_calculators'

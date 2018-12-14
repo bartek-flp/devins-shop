@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function devinshop_cart_schema() {
+
+  $schema = [];
+
+  $schema['cart_items'] = [
+    'description' => 'Shop cart data',
+    'fields' => [
+      'id' => [
+        'description' => 'The primary identifier for a cart item.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'product_id' => [
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+      'user_id' => [
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+      'created' => [
+        'type' => 'timestamp',
+        'mysql_type' => 'TIMESTAMP',
+        'not null' => TRUE,
+      ],
+    ],
+
+    'primary key' => array(
+      'id',
+    ),
+
+  ];
+
+  return $schema;
+}

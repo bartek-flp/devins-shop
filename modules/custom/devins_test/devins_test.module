@@ -1,0 +1,14 @@
+<?php
+
+function devins_test_theme($existing, $type, $theme, $path) {
+  return [
+    'modern_php' => [
+      'path' => $path . '/templates',
+      'template' => 'modern-php',
+      'variables' => [
+        'data' => NULL,
+        'title' => NULL,
+      ],
+    ],
+  ];
+}

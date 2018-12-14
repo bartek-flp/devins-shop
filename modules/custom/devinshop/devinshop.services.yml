@@ -1,0 +1,4 @@
+services:
+  devinshop.db:
+    class: Drupal\devinshop\Controller\Database
+    arguments: ['@database']
